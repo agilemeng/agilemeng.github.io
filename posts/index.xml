@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 迷途的羔羊</title>
+    <link>https://agilemeng.github.io/posts/</link>
+    <description>Recent content in Posts on 迷途的羔羊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 09 Jul 2020 15:04:05 +0800</lastBuildDate><atom:link href="https://agilemeng.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>总览</title>
+      <link>https://agilemeng.github.io/posts/list/</link>
+      <pubDate>Tue, 07 Jul 2020 15:04:05 +0800</pubDate>
+      
+      <guid>https://agilemeng.github.io/posts/list/</guid>
+      <description>本博客计划技能图谱如下，脑图中分类对应博客的分类，不断补充中&amp;hellip;&amp;hellip;..
+ </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://agilemeng.github.io/posts/About/</link>
+      <pubDate>Tue, 07 Jul 2020 13:04:05 +0800</pubDate>
+      
+      <guid>https://agilemeng.github.io/posts/About/</guid>
+      <description>一个爱好编程的大男孩。
+ 爱好骑行，爬山，音乐和漫无目的走在大街上。
+ 意见和交流请邮件 meng_zhao@foxmail.com.</description>
+    </item>
+    
+  </channel>
+</rss>

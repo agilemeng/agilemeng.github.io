@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on 迷途的羔羊</title>
+    <link>https://agilemeng.github.io/</link>
+    <description>Recent content in Introduction on 迷途的羔羊</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 09 Jul 2020 15:04:05 +0800</lastBuildDate><atom:link href="https://agilemeng.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo&#43;Github搭建个人博客</title>
+      <link>https://agilemeng.github.io/posts/tools/hugo/</link>
+      <pubDate>Thu, 09 Jul 2020 15:04:05 +0800</pubDate>
+      
+      <guid>https://agilemeng.github.io/posts/tools/hugo/</guid>
+      <description>&lt;p&gt;Hugo是基于Go语言编写的静态博客框架，利用它结合Github Pages可以很容易的搭建出个人博客。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/%E5%AF%BC%E5%85%A5%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/%E5%AF%BC%E5%85%A5%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/</guid>
+      <description>&lt;p&gt;golang语言，快速写出高效率的代码。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Markdown的基本语法</title>
+      <link>https://agilemeng.github.io/posts/tools/markdown/</link>
+      <pubDate>Wed, 08 Jul 2020 15:04:05 +0800</pubDate>
+      
+      <guid>https://agilemeng.github.io/posts/tools/markdown/</guid>
+      <description>&lt;p&gt;第一篇正式文章吧，记录Markdown的用法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/Go%E8%AF%8D%E6%B3%95%E5%8D%95%E5%85%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/Go%E8%AF%8D%E6%B3%95%E5%8D%95%E5%85%83/</guid>
+      <description>mermaid.initialize({ &#34;flowchart&#34;: { &#34;useMaxWidth&#34;:true }, &#34;theme&#34;: &#34;default&#34; } ) flowchart LRtoken -- 标识符 &amp; 操作符与分隔符 &amp; 字面常量标识符 -- 预声明标识符 &amp; 自定义标识符操作符与分隔符 -- 操作符 &amp; 纯分隔符字面常量 -- 整形字面量\n浮点型字面量\n复数型字面量\n字符串字面量\n字符型字面量预声明标识符 -- 关键字 &amp; 其它自定义标识符 -- user[包名 变量名 常量名\n 函数名 自定义类型名\n方法名]纯分隔符 -- cfgf[空白 制表符 回车 换行]其它 -- 类型标识符 &amp; 常量标识符 &amp; 空白标识符 &amp; 内置函数关键字(keywords) #     功能(25个) 关键字     引导整体程序结构 package import const var func defer go return   声明复合数据结构 struct interface map chan   控制程序结构 if else for range break continue switch select type case default fallthrough goto    类型标识符 #     类型(20个) 值     整型 byte int int8 int16 int32 int64 uint uint8 uint16 uint32 uint64 uintptr   浮点型 float32 float64   复数型 complex64 complex128   字符和字符串型 string rune   接口型 interface   布尔型 bool    常量标识符 #   true false iota nil(指针/引用型变量默认值就是nil)</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/</guid>
+      <description>数据类型 #  常量和变量 #  变量：
+var varName dataType [ = value ]
+var varName = value
+varName := value (只能在函数或方法内使用)
+常量： 布尔型、字符串型和数值型。
+const name = value
+基本数据类型 #     类型 值     整型 byte int int8 int16 int32 int64 uint uint8 uint16 uint32 uint64 uintptr   浮点型 float32 float64   复数型 complex64 complex128   字符 rune   字符串型 string   布尔型 bool    字符串类型 #  1、len() 函数求的是字符串字节的长度；</description>
+    </item>
+    
+    <item>
+      <title>总览</title>
+      <link>https://agilemeng.github.io/posts/list/</link>
+      <pubDate>Tue, 07 Jul 2020 15:04:05 +0800</pubDate>
+      
+      <guid>https://agilemeng.github.io/posts/list/</guid>
+      <description>本博客计划技能图谱如下，脑图中分类对应博客的分类，不断补充中&amp;hellip;&amp;hellip;..
+ </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://agilemeng.github.io/posts/About/</link>
+      <pubDate>Tue, 07 Jul 2020 13:04:05 +0800</pubDate>
+      
+      <guid>https://agilemeng.github.io/posts/About/</guid>
+      <description>一个爱好编程的大男孩。
+ 爱好骑行，爬山，音乐和漫无目的走在大街上。
+ 意见和交流请邮件 meng_zhao@foxmail.com.</description>
+    </item>
+    
+  </channel>
+</rss>

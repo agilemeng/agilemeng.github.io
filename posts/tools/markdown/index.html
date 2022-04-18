@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.80.0" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="第一篇正式文章吧，记录Markdown的用法。">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Markdown的基本语法" />
+<meta property="og:description" content="第一篇正式文章吧，记录Markdown的用法。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://agilemeng.github.io/posts/tools/markdown/" />
+<meta property="article:published_time" content="2020-07-08T15:04:05+08:00" />
+<meta property="article:modified_time" content="2020-07-08T15:04:05+08:00" />
+<title>Markdown的基本语法 | 迷途的羔羊</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.81007768dfa1141e1fa60a2832f2c035182f8b9a5e48824ebdadd71412b4b994.css" integrity="sha256-gQB3aN&#43;hFB4fpgooMvLANRgvi5peSIJOva3XFBK0uZQ=">
+<script defer src="/en.search.min.63d2161bc3f4b340425eaa9f2630b4d51dd73584df163663c930047f3455e288.js" integrity="sha256-Y9IWG8P0s0BCXqqfJjC01R3XNYTfFjZjyTAEfzRV4og="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>迷途的羔羊</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-62ac19cccc590298dc8f995812adb8c9" class="toggle"  />
+    <label for="section-62ac19cccc590298dc8f995812adb8c9" class="flex justify-between">
+      <a  class="">Golang</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-227f2a7e08c31cefc22f5e6aef5f4459" class="toggle"  />
+    <label for="section-227f2a7e08c31cefc22f5e6aef5f4459" class="flex justify-between">
+      <a  class="">基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/%E5%AF%BC%E5%85%A5%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/" class="">导入及环境准备</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/Go%E8%AF%8D%E6%B3%95%E5%8D%95%E5%85%83/" class="">Go词法单元</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%8E%A7%E5%88%B6%E7%BB%93%E6%9E%84/" class="">数据类型和控制结构</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2fe05e7a33bd4592bc80e533bd266ecf" class="toggle"  />
+    <label for="section-2fe05e7a33bd4592bc80e533bd266ecf" class="flex justify-between">
+      <a  class="">常用库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-77fce8e85b953a50d4b371701f089ac5" class="toggle"  />
+    <label for="section-77fce8e85b953a50d4b371701f089ac5" class="flex justify-between">
+      <a  class="">小技巧</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a1ff99ddfa6b784c694f6e3a45384561" class="toggle"  />
+    <label for="section-a1ff99ddfa6b784c694f6e3a45384561" class="flex justify-between">
+      <a  class="">Algorithm</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4a2829e2895806510cec0a44bf7312b6" class="toggle"  />
+    <label for="section-4a2829e2895806510cec0a44bf7312b6" class="flex justify-between">
+      <a  class="">设计模式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c1d999bfe70c6800cea0f6bd8c6842fb" class="toggle"  />
+    <label for="section-c1d999bfe70c6800cea0f6bd8c6842fb" class="flex justify-between">
+      <a  class="">代码结构</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ac08f61dce7ad61dd2ea7ad4910367cb" class="toggle"  />
+    <label for="section-ac08f61dce7ad61dd2ea7ad4910367cb" class="flex justify-between">
+      <a  class="">Linux</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fba48c810090d2e783128978d5066115" class="toggle"  />
+    <label for="section-fba48c810090d2e783128978d5066115" class="flex justify-between">
+      <a  class="">网络</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-edf3c1c61917ce64faeb4e80038ef3f2" class="toggle"  />
+    <label for="section-edf3c1c61917ce64faeb4e80038ef3f2" class="flex justify-between">
+      <a  class="">Security</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2f0bd62305d8bc28dbe4b22f6806d03f" class="toggle"  />
+    <label for="section-2f0bd62305d8bc28dbe4b22f6806d03f" class="flex justify-between">
+      <a  class="">Database</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bb34069460f96553ef570acbe530f8f8" class="toggle"  />
+    <label for="section-bb34069460f96553ef570acbe530f8f8" class="flex justify-between">
+      <a  class="">Docker</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3405a5f2ef1eb48e516950a9069ae895" class="toggle"  />
+    <label for="section-3405a5f2ef1eb48e516950a9069ae895" class="flex justify-between">
+      <a  class="">K8s</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8ed050ed7781bd33b85c5b585530bfee" class="toggle"  />
+    <label for="section-8ed050ed7781bd33b85c5b585530bfee" class="flex justify-between">
+      <a  class="">Cncf</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-145ca43eba78f845d0f1709e213361bd" class="toggle" checked />
+    <label for="section-145ca43eba78f845d0f1709e213361bd" class="flex justify-between">
+      <a  class="">tools</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://agilemeng.github.io/posts/tools/hugo/" class="">Hugo&#43;Github搭建个人博客</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://agilemeng.github.io/posts/tools/markdown/" class=" active">Markdown的基本语法</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2f26576c7b9d47b6459768e044e8d75f" class="toggle"  />
+    <label for="section-2f26576c7b9d47b6459768e044e8d75f" class="flex justify-between">
+      <a  class="">杂谈</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://agilemeng.github.io/posts/list/" class="">总览</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://agilemeng.github.io/posts/About/" class="">About</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/codemgo?tab=projects" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/" target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Markdown的基本语法</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#标题">标题</a></li>
+        <li><a href="#段落格式">段落格式</a>
+          <ul>
+            <li><a href="#换行">换行</a></li>
+            <li><a href="#字体">字体</a></li>
+            <li><a href="#分隔线">分隔线</a></li>
+            <li><a href="#删除线">删除线</a></li>
+            <li><a href="#下划线">下划线</a></li>
+            <li><a href="#脚注">脚注</a></li>
+          </ul>
+        </li>
+        <li><a href="#列表">列表</a>
+          <ul>
+            <li><a href="#无序列表">无序列表</a></li>
+            <li><a href="#有序列表">有序列表</a></li>
+            <li><a href="#列表嵌套">列表嵌套</a></li>
+          </ul>
+        </li>
+        <li><a href="#区块">区块</a></li>
+        <li><a href="#代码">代码</a></li>
+        <li><a href="#链接">链接</a>
+          <ul>
+            <li><a href="#超链接">超链接</a></li>
+            <li><a href="#锚点">锚点</a></li>
+          </ul>
+        </li>
+        <li><a href="#图片">图片</a></li>
+        <li><a href="#表格">表格</a></li>
+        <li><a href="#高级技巧">高级技巧</a>
+          <ul>
+            <li><a href="#html原始码">html原始码</a></li>
+            <li><a href="#转义">转义</a></li>
+            <li><a href="#公式">公式</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#columns">Columns</a></li>
+            <li><a href="#expand">Expand</a></li>
+            <li><a href="#hints">Hints</a></li>
+            <li><a href="#mermaid">Mermaid</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/tools/markdown/">Markdown的基本语法</a>
+  </h1>
+  
+  <h5>July 8, 2020</h5>
+
+
+
+  
+
+  
+
+
+
+<p>第一篇正式文章吧，记录Markdown的用法。</p>
+<h2 id="标题">
+  标题
+  <a class="anchor" href="#%e6%a0%87%e9%a2%98">#</a>
+</h2>
+<p>使用 # 号可表示 1-6 级标题：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl"># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre></div><h2 id="段落格式">
+  段落格式
+  <a class="anchor" href="#%e6%ae%b5%e8%90%bd%e6%a0%bc%e5%bc%8f">#</a>
+</h2>
+<h3 id="换行">
+  换行
+  <a class="anchor" href="#%e6%8d%a2%e8%a1%8c">#</a>
+</h3>
+<p>行尾的两个以上空格加回车(换行) or 段落后使用一个空行(新段)。</p>
+<blockquote>
+<p>**空格：**在输入连续的空格后，Typora 会在编辑器视图里为你保留这些空格，但当你打印或导出时，这些空格会被省略成一个。你可以在源代码模式下，为每个空格前加一个 \ 转义符，或者直接使用 HTML 风格的 &amp;nbps; 来保持连续的空格。</p>
+<p>**软换行：**需要说明的是，在 Markdown 语法中，换行（line break）与换段是不同的。且换行分为软换行和硬换行。在 Typora 中，你可以通过 Shift + Enter 完成一次软换行。软换行只在编辑界面可见，当文档被导出时换行会被省略。</p>
+<p>**硬换行：**你可以通过 空格 + 空格 + Shift + Enter 完成一次硬换行，而这也是许多 Markdown 编辑器所原生支持的。硬换行在文档被导出时将被保留，且没有换段的段后距。</p>
+<p>**换段：**你可以通过 Enter 完成一次换段。Typora 会自动帮你完成两次 Shift + Enter 的软换行，从而完成一次换段。这也意味着在 Markdown 语法下，换段是通过在段与段之间加入空行来实现的。</p>
+</blockquote>
+<h3 id="字体">
+  字体
+  <a class="anchor" href="#%e5%ad%97%e4%bd%93">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">*斜体文本*
+_斜体文本_
+**粗体文本**
+__粗体文本__
+***粗斜体文本***
+___粗斜体文本___
+</code></pre></div><p><em>斜体文本</em><br>
+<em>斜体文本</em><br>
+<strong>粗体文本</strong><br>
+<strong>粗体文本</strong><br>
+<em><strong>粗斜体文本</strong></em><br>
+<em><strong>粗斜体文本</strong></em></p>
+<h3 id="分隔线">
+  分隔线
+  <a class="anchor" href="#%e5%88%86%e9%9a%94%e7%ba%bf">#</a>
+</h3>
+<p>用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">***
+* * *
+- - -
+--------
+</code></pre></div><hr>
+<hr>
+<hr>
+<h3 id="删除线">
+  删除线
+  <a class="anchor" href="#%e5%88%a0%e9%99%a4%e7%ba%bf">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">BAIDU.COM
+~~BAIDU.COM~~
+</code></pre></div><p>BAIDU.COM<br>
+<del>BAIDU.COM</del></p>
+<h3 id="下划线">
+  下划线
+  <a class="anchor" href="#%e4%b8%8b%e5%88%92%e7%ba%bf">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">&lt;u&gt;带下划线文本&lt;/u&gt;
+</code></pre></div><p><u>带下划线文本</u></p>
+<h3 id="脚注">
+  脚注
+  <a class="anchor" href="#%e8%84%9a%e6%b3%a8">#</a>
+</h3>
+<p>脚注是对文本的补充说明。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">创建脚注格式类似这样 [^RUNOOB]。
+
+[^RUNOOB]: 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+</code></pre></div><p>创建脚注格式类似这样 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
+<h2 id="列表">
+  列表
+  <a class="anchor" href="#%e5%88%97%e8%a1%a8">#</a>
+</h2>
+<h3 id="无序列表">
+  无序列表
+  <a class="anchor" href="#%e6%97%a0%e5%ba%8f%e5%88%97%e8%a1%a8">#</a>
+</h3>
+<p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">* 无序列表一
++ 无序列表二
+- 无序列表二
+</code></pre></div><ul>
+<li>无序列表一</li>
+</ul>
+<ul>
+<li>无序列表二</li>
+</ul>
+<ul>
+<li>无序列表三</li>
+</ul>
+<h3 id="有序列表">
+  有序列表
+  <a class="anchor" href="#%e6%9c%89%e5%ba%8f%e5%88%97%e8%a1%a8">#</a>
+</h3>
+<p>有序列表则使用数字接着一个英文句点：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">1. 有序列表一
+2. 有序列表二
+</code></pre></div><ol>
+<li>有序列表一</li>
+<li>有序列表二</li>
+</ol>
+<h3 id="列表嵌套">
+  列表嵌套
+  <a class="anchor" href="#%e5%88%97%e8%a1%a8%e5%b5%8c%e5%a5%97">#</a>
+</h3>
+<p>列表嵌套只需在子列表中的选项添加四个空格即可</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">1. 第一项：
+    - 第一项嵌套的第一个元素
+    - 第一项嵌套的第二个元素
+2. 第二项：
+    - 第二项嵌套的第一个元素
+    - 第二项嵌套的第二个元素
+</code></pre></div><ol>
+<li>第一项：
+<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项：
+<ul>
+<li>第二项嵌套的第一个元素</li>
+<li>第二项嵌套的第二个元素</li>
+</ul>
+</li>
+</ol>
+<h2 id="区块">
+  区块
+  <a class="anchor" href="#%e5%8c%ba%e5%9d%97">#</a>
+</h2>
+<p>区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号</p>
+<p>Markdown 也允许你偷懒只在整个段落的第一行最前面加上 &gt;</p>
+<p>引用的区块内也可使用其他的 Markdown 语法，包括标题、列表、代码区块等</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">&gt; 你是猪吗？孩子
+&gt;&gt; 是的 我是猪  
+我真的是猪
+</code></pre></div><blockquote>
+<p>你是猪吗？孩子</p>
+<blockquote>
+<p>是的 我是猪<br>
+我真的是猪</p>
+</blockquote>
+</blockquote>
+<h2 id="代码">
+  代码
+  <a class="anchor" href="#%e4%bb%a3%e7%a0%81">#</a>
+</h2>
+<p>行内代码：用反引号&quot;`&ldquo;包括起来</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">`printf()` 函数
+</code></pre></div><p><code>printf()</code> 函数</p>
+<p>多行代码：<br>
+(1)代码区块使用一个制表符(不推荐，格式有点不正常)<br>
+(2)用六个反引号```包裹代码(后面可跟上c/java/php/js/py/go/xml/html/matlab/go等等)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello,World!&#34;</span>);
+}
+</code></pre></div><h2 id="链接">
+  链接
+  <a class="anchor" href="#%e9%93%be%e6%8e%a5">#</a>
+</h2>
+<h3 id="超链接">
+  超链接
+  <a class="anchor" href="#%e8%b6%85%e9%93%be%e6%8e%a5">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">[链接名称](链接地址 &#34;链接标题，可不加&#34;)
+or
+&lt;链接地址&gt;
+or
+[链接文字][链接标记]
+在文本的任意位置添加
+[链接标记]:链接地址 &#34;链接标题&#34;
+</code></pre></div><p>
+  <a href="http://www.baidu.com" title="鼠标悬停显示的文字，可不加">百度一下</a></p>
+<h3 id="锚点">
+  锚点
+  <a class="anchor" href="#%e9%94%9a%e7%82%b9">#</a>
+</h3>
+<p>锚点其实就是页内超链接，实现快速跳到页面指定位置：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">目的地<span style="color:#75715e">{</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">index</span><span style="color:#75715e">}</span>
+[跳转](#index)
+</code></pre></div><p>目的地{#dst}<br>
+
+  <a href="/#dst">跳转</a></p>
+<h2 id="图片">
+  图片
+  <a class="anchor" href="#%e5%9b%be%e7%89%87">#</a>
+</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">![alt 属性文本](图片地址)
+or
+![alt 属性文本](图片地址 &#34;可选标题&#34;)
+or
+![alt 属性文本][标记]
+在文本的任意位置添加
+[标记]:图片地址 &#34;可选标题&#34;
+</code></pre></div><p>[alt 属性文本]其实是图片未正常显示时的替换文字。</p>
+<p>
+  <img src="http://static.runoob.com/images/runoob-logo.png" alt="RUNOOB 图标" /></p>
+<h2 id="表格">
+  表格
+  <a class="anchor" href="#%e8%a1%a8%e6%a0%bc">#</a>
+</h2>
+<p>第一行为表头，第二行分隔表头和主体部分</p>
+<p>使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">左对齐 | 右对齐 | 居中对齐
+:-----| ----: | :----:
+单元格 | 单元格 | 单元格
+单元格 | 单元格 | 单元格
+</code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:right">右对齐</th>
+<th style="text-align:center">居中对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">单元格</td>
+<td style="text-align:right">单元格</td>
+<td style="text-align:center">单元格</td>
+</tr>
+<tr>
+<td style="text-align:left">单元格</td>
+<td style="text-align:right">单元格</td>
+<td style="text-align:center">单元格</td>
+</tr>
+</tbody>
+</table>
+<h2 id="高级技巧">
+  高级技巧
+  <a class="anchor" href="#%e9%ab%98%e7%ba%a7%e6%8a%80%e5%b7%a7">#</a>
+</h2>
+<h3 id="html原始码">
+  html原始码
+  <a class="anchor" href="#html%e5%8e%9f%e5%a7%8b%e7%a0%81">#</a>
+</h3>
+<p>在代码区块里面， &amp; 、 &lt; 和 &gt; 会自动转成 HTML 实体</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;footer&#34;</span>&gt;
+   © 2004 Foo Corporation
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="footer">
+   © 2004 Foo Corporation
+</div>
+<h3 id="转义">
+  转义
+  <a class="anchor" href="#%e8%bd%ac%e4%b9%89">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">\   反斜线
+`   反引号
+*   星号
+_   下划线
+<span style="color:#75715e">{}</span>  花括号
+[]  方括号
+()  小括号
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   感叹号
+</code></pre></div><h3 id="公式">
+  公式
+  <a class="anchor" href="#%e5%85%ac%e5%bc%8f">#</a>
+</h3>
+<p>行内公式：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">$E=mc^2$
+</code></pre></div><p>$E=mc^2$</p>
+<p>多行公式：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">$$E=mc^2$$
+</code></pre></div><p>$$E=mc^2$$</p>
+<h3 id="buttons">
+  Buttons
+  <a class="anchor" href="#buttons">#</a>
+</h3>
+<p>一种跳转到本地或外部链接的风格。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{&lt; <span style="color:#f92672">button</span> <span style="color:#a6e22e">relref</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;...&#34;</span><span style="color:#960050;background-color:#1e0010">]</span> &gt;}}Get Home{{&lt; /<span style="color:#f92672">button</span> &gt;}}
+{{&lt; <span style="color:#f92672">button</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/alex-shpak/hugo-book&#34;</span> &gt;}}Contribute{{&lt; /<span style="color:#f92672">button</span> &gt;}} 
+</code></pre></div>
+
+
+
+  
+
+<a  href="/"   class="book-btn">
+  Get Home
+</a>
+
+
+
+
+  
+  
+
+
+<a  href="https://github.com/codemgo?tab=projects"   target="_blank"  class="book-btn">
+  Contribute
+</a>
+
+<h3 id="columns">
+  Columns
+  <a class="anchor" href="#columns">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{&lt; <span style="color:#f92672">columns</span> &gt;}}
+**Left Content**
+Lorem markdownum insigne.
+&lt;<span style="color:#f92672">---</span>&gt;
+**Mid Content**
+Lorem markdownum insigne.
+&lt;<span style="color:#f92672">---</span>&gt;
+**Right Content**
+Lorem markdownum insigne. 
+{{&lt; /<span style="color:#f92672">columns</span> &gt;}}
+</code></pre></div><div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    <p><strong>Left Content</strong></p>
+<p>Lorem markdownum insigne.</p>
+
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <p><strong>Mid Content</strong></p>
+<p>Lorem markdownum insigne.</p>
+
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <p><strong>Right Content</strong></p>
+<p>Lorem markdownum insigne.</p>
+
+  </div>
+  
+</div>
+
+<h3 id="expand">
+  Expand
+  <a class="anchor" href="#expand">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{&lt; <span style="color:#f92672">expand</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">Custom</span> <span style="color:#a6e22e">Label</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">&#34;...&#34;</span> &gt;}}
+## Markdown content
+Lorem markdownum insigne...
+{{&lt; /<span style="color:#f92672">expand</span> &gt;}}
+</code></pre></div>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Custom Label</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <p><strong>## Markdown content</strong></p>
+<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat</p>
+<p>stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa</p>
+<p>protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em><em>quid</em></em>, ignes.</p>
+<p>Miseratus fonte Ditis conubia.</p>
+
+    </div>
+  </label>
+</div>
+
+<h3 id="hints">
+  Hints
+  <a class="anchor" href="#hints">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{&lt; <span style="color:#f92672">hint</span> <span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">info</span><span style="color:#960050;background-color:#1e0010">|</span><span style="color:#a6e22e">warning</span><span style="color:#960050;background-color:#1e0010">|</span><span style="color:#a6e22e">danger</span><span style="color:#960050;background-color:#1e0010">]</span> &gt;}} 
+各种级别的提示信息。。。
+{{&lt; /<span style="color:#f92672">hint</span> &gt;}}
+</code></pre></div><blockquote class="book-hint info">
+  <em><strong>*info*</strong></em>  级别的提示信息···
+</blockquote>
+
+<blockquote class="book-hint warning">
+  <em><strong>*warning*</strong></em>   级别的提示信息···
+</blockquote>
+
+<blockquote class="book-hint danger">
+  <em><strong>*danger*</strong></em>   级别的提示信息···
+</blockquote>
+
+<h3 id="mermaid">
+  Mermaid
+  <a class="anchor" href="#mermaid">#</a>
+</h3>
+<p>Mermaid是一种基于Javascript的绘图工具，使用类似于Markdown的语法，使用户可以方便快捷地通过代码创建图表。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+sequenceDiagram
+    Alice-&gt;&gt;Bob: Hello Bob, how are you?
+    alt is sick
+        Bob-&gt;&gt;Alice: Not so good :(
+    else is well
+        Bob-&gt;&gt;Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob-&gt;&gt;Alice: Thanks for asking
+    end
+{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</code></pre></div>
+
+<script src="/mermaid.min.js"></script>
+
+  <script>mermaid.initialize({
+  "flowchart": {
+    "useMaxWidth":true
+  },
+  "theme": "default"
+}
+)</script>
+
+
+
+
+<p class="mermaid">
+sequenceDiagram
+    Alice->>Bob: Hello Bob, how are you?
+    alt is sick
+        Bob->>Alice: Not so good :(
+    else is well
+        Bob->>Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob->>Alice: Thanks for asking
+    end
+</p>
+
+<hr>
+<p>❤ <strong>使用Typora可以更加方便的编写markdown文档，而不用手写代码，强力推荐。</strong><br>
+<strong>本文参考：</strong>
+
+  <a href="https://www.typora.net/support/">Typora中文官网</a>   
+
+  <a href="http://markdown.p2hp.com/basic-syntax/#overview">Markdown中文官网</a>   
+
+  <a href="https://mermaid-js.github.io/mermaid/#/">UML-Mermaid</a></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>菜鸟教程 &ndash; 学的不仅是技术，更是梦想！！！ <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#标题">标题</a></li>
+        <li><a href="#段落格式">段落格式</a>
+          <ul>
+            <li><a href="#换行">换行</a></li>
+            <li><a href="#字体">字体</a></li>
+            <li><a href="#分隔线">分隔线</a></li>
+            <li><a href="#删除线">删除线</a></li>
+            <li><a href="#下划线">下划线</a></li>
+            <li><a href="#脚注">脚注</a></li>
+          </ul>
+        </li>
+        <li><a href="#列表">列表</a>
+          <ul>
+            <li><a href="#无序列表">无序列表</a></li>
+            <li><a href="#有序列表">有序列表</a></li>
+            <li><a href="#列表嵌套">列表嵌套</a></li>
+          </ul>
+        </li>
+        <li><a href="#区块">区块</a></li>
+        <li><a href="#代码">代码</a></li>
+        <li><a href="#链接">链接</a>
+          <ul>
+            <li><a href="#超链接">超链接</a></li>
+            <li><a href="#锚点">锚点</a></li>
+          </ul>
+        </li>
+        <li><a href="#图片">图片</a></li>
+        <li><a href="#表格">表格</a></li>
+        <li><a href="#高级技巧">高级技巧</a>
+          <ul>
+            <li><a href="#html原始码">html原始码</a></li>
+            <li><a href="#转义">转义</a></li>
+            <li><a href="#公式">公式</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#columns">Columns</a></li>
+            <li><a href="#expand">Expand</a></li>
+            <li><a href="#hints">Hints</a></li>
+            <li><a href="#mermaid">Mermaid</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
