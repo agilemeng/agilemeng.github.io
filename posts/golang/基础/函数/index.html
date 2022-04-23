@@ -3,20 +3,31 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="基本使用
+函数签名
+匿名函数
+defer
+闭包
+panic和recover
+错误处理">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://agilemeng.github.io/posts/docker/" />
+<meta property="og:description" content="基本使用
+函数签名
+匿名函数
+defer
+闭包
+panic和recover
+错误处理" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/%E5%87%BD%E6%95%B0/" />
 
-<title>Docker | 迷途的羔羊</title>
+<title>函数 | 迷途的羔羊</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.da110f27d6a4d632dc8e162876b7216c5c1f82164fbdac7ff33021633767f034.css" integrity="sha256-2hEPJ9ak1jLcjhYodrchbFwfghZPvax/8zAhYzdn8DQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
   <script defer src="/en.search.min.48b6951f55b443927da8eb648131ba0d882596938ef14aac62ede44b4f73b150.js" integrity="sha256-SLaVH1W0Q5J9qOtkgTG6DYgllpOO8UqsYu3kS09zsVA=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://agilemeng.github.io/posts/docker/index.xml" title="迷途的羔羊" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -68,7 +79,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-62ac19cccc590298dc8f995812adb8c9" class="toggle"  />
+    <input type="checkbox" id="section-62ac19cccc590298dc8f995812adb8c9" class="toggle" checked />
     <label for="section-62ac19cccc590298dc8f995812adb8c9" class="flex justify-between">
       <a role="button" class="">Golang</a>
     </label>
@@ -84,7 +95,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-227f2a7e08c31cefc22f5e6aef5f4459" class="toggle"  />
+    <input type="checkbox" id="section-227f2a7e08c31cefc22f5e6aef5f4459" class="toggle" checked />
     <label for="section-227f2a7e08c31cefc22f5e6aef5f4459" class="flex justify-between">
       <a role="button" class="">基础</a>
     </label>
@@ -139,7 +150,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/golang/%E5%9F%BA%E7%A1%80/%E5%87%BD%E6%95%B0/" class="">函数</a>
+    <a href="/posts/golang/%E5%9F%BA%E7%A1%80/%E5%87%BD%E6%95%B0/" class=" active">函数</a>
   
 
         </li>
@@ -351,9 +362,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-bb34069460f96553ef570acbe530f8f8" class="toggle" checked />
+    <input type="checkbox" id="section-bb34069460f96553ef570acbe530f8f8" class="toggle"  />
     <label for="section-bb34069460f96553ef570acbe530f8f8" class="flex justify-between">
-      <a role="button" class="active">Docker</a>
+      <a role="button" class="">Docker</a>
     </label>
   
 
@@ -549,7 +560,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Docker</strong>
+  <strong>函数</strong>
 
   <label for="toc-control">
     
@@ -562,29 +573,9 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav>
-  <ul>
   
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
+
 
 
   </aside>
@@ -594,11 +585,27 @@ https://github.com/alex-shpak/hugo-book
 
       
       
+<article class="markdown">
+  <h1>
+    <a href="/posts/golang/%E5%9F%BA%E7%A1%80/%E5%87%BD%E6%95%B0/">函数</a>
+  </h1>
+  
+
+
   
 
   
 
 
+
+<p>基本使用</p>
+<p>函数签名</p>
+<p>匿名函数</p>
+<p>defer</p>
+<p>闭包</p>
+<p>panic和recover</p>
+<p>错误处理</p>
+</article>
  
       
 
@@ -624,6 +631,10 @@ document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("clic
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -633,29 +644,9 @@ document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("clic
     <aside class="book-toc">
       <div class="book-toc-content">
         
-  <nav>
-  <ul>
   
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
+
 
  
       </div>

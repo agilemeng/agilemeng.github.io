@@ -38,5 +38,20 @@ const name = value
 基本数据类型#   类型 值     整型 byte int int8 int16 int32 int64 uint uint8 uint16 uint32 uint64 uintptr   浮点型 float32 float64   复数型 complex64 complex128   字符 rune   字符串型 string   布尔型 bool    字符串类型#1、len() 函数求的是字符串字节的长度；</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/%E5%87%BD%E6%95%B0/</guid>
+      <description>基本使用
+函数签名
+匿名函数
+defer
+闭包
+panic和recover
+错误处理</description>
+    </item>
+    
   </channel>
 </rss>
