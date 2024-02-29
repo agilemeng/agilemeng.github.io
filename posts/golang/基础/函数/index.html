@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="基本使用#函数签名#匿名函数#defer#闭包#panic和recover#错误处理#">
+<meta name="description" content="函数是一种类型。和其它类型一样，首字母大小写决定是否具有包外可见性。
+基本使用#1、形参简写和有名返回值func add(a, b int) (sum int) {sum = a &#43; breturn}2、不支持默认参数值3、不支持命名函数嵌套定义4、多指返回func swap(a, b int) (int, int) {return b, a}5、实参到形参按值传递（传的是值或指针的副本）6、不定参数func sum(arr ...int) (sum int){for _, v := range arr {sum &#43;= v}return}注意: (1)不定参数必须是最后一个参数；(2)不定参数在函数体内相当于切片；(3)切片可以作为不定参数传给不定参数，切片名后面要加上&quot;...&quot;;(4)形参为不定参数和切片是两种不同的类型。函数签名#函数类型又叫函数签名。可用fmt.printf(&quot;%T\n&quot;, f)打印函数类型。
+可定义有名函数类型。
+函数类型是一种引用类型，未初始化时默认值为nil；函数类型变量和函数名都可当作指针变量。
+func add(a, b int) int { return a &#43; b } func main { fmt.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="基本使用#函数签名#匿名函数#defer#闭包#panic和recover#错误处理#" />
+<meta property="og:description" content="函数是一种类型。和其它类型一样，首字母大小写决定是否具有包外可见性。
+基本使用#1、形参简写和有名返回值func add(a, b int) (sum int) {sum = a &#43; breturn}2、不支持默认参数值3、不支持命名函数嵌套定义4、多指返回func swap(a, b int) (int, int) {return b, a}5、实参到形参按值传递（传的是值或指针的副本）6、不定参数func sum(arr ...int) (sum int){for _, v := range arr {sum &#43;= v}return}注意: (1)不定参数必须是最后一个参数；(2)不定参数在函数体内相当于切片；(3)切片可以作为不定参数传给不定参数，切片名后面要加上&quot;...&quot;;(4)形参为不定参数和切片是两种不同的类型。函数签名#函数类型又叫函数签名。可用fmt.printf(&quot;%T\n&quot;, f)打印函数类型。
+可定义有名函数类型。
+函数类型是一种引用类型，未初始化时默认值为nil；函数类型变量和函数名都可当作指针变量。
+func add(a, b int) int { return a &#43; b } func main { fmt." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://agilemeng.github.io/posts/golang/%E5%9F%BA%E7%A1%80/%E5%87%BD%E6%95%B0/" />
 
@@ -15,7 +23,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.da110f27d6a4d632dc8e162876b7216c5c1f82164fbdac7ff33021633767f034.css" integrity="sha256-2hEPJ9ak1jLcjhYodrchbFwfghZPvax/8zAhYzdn8DQ=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.b701aedd7aa24b2dab16ddcc10bfef02e2a836ade466c437394420bcc55baa89.js" integrity="sha256-twGu3XqiSy2rFt3MEL/vAuKoNq3kZsQ3OUQgvMVbqok=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.75b10f57fd5aa5715e2432a5ca2b32230545cb0b8c70f9eb5ad7401def588718.js" integrity="sha256-dbEPV/1apXFeJDKlyisyIwVFywuMcPnrWtdAHe9Yhxg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -588,23 +596,76 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+<p>函数是一种类型。和其它类型一样，首字母大小写决定是否具有包外可见性。</p>
 <h2 id="基本使用">
   基本使用
   <a class="anchor" href="#%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8">#</a>
 </h2>
-<pre><code>
+<pre><code>1、形参简写和有名返回值
+func add(a, b int) (sum int) {
+	sum = a + b
+	return
+}
+2、不支持默认参数值
+3、不支持命名函数嵌套定义
+4、多指返回
+func swap(a, b int) (int, int) {return b, a}
+5、实参到形参按值传递（传的是值或指针的副本）
+6、不定参数
+func sum(arr ...int) (sum int){
+	for _, v := range arr {
+		sum += v
+	}
+	return
+}
+注意: (1)不定参数必须是最后一个参数；
+(2)不定参数在函数体内相当于切片；
+(3)切片可以作为不定参数传给不定参数，切片名后面要加上&quot;...&quot;;
+(4)形参为不定参数和切片是两种不同的类型。
 </code></pre><h2 id="函数签名">
   函数签名
   <a class="anchor" href="#%e5%87%bd%e6%95%b0%e7%ad%be%e5%90%8d">#</a>
 </h2>
-<h2 id="匿名函数">
+<p>函数类型又叫函数签名。可用fmt.printf(&quot;%T\n&quot;,  f)打印函数类型。<br>
+可定义有名函数类型。<br>
+函数类型是一种引用类型，未初始化时默认值为nil；函数类型变量和函数名都可当作指针变量。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">int</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span> {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%T\n&#34;</span>, <span style="color:#a6e22e">add</span>)		<span style="color:#75715e">//func(int, int) int
+</span><span style="color:#75715e"></span>}
+</code></pre></div><h2 id="匿名函数">
   匿名函数
   <a class="anchor" href="#%e5%8c%bf%e5%90%8d%e5%87%bd%e6%95%b0">#</a>
 </h2>
-<h2 id="defer">
+<p>Go提供两种函数类型：有名函数和匿名函数。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">//匿名函数四种用法：
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">doinput</span>(<span style="color:#a6e22e">f</span> <span style="color:#66d9ef">func</span>(<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">int</span>, <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">int</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">f</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>)
+}
+<span style="color:#75715e">// 1、直接赋值给变量
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sum</span> = <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">int</span> { <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span> }
+<span style="color:#75715e">// 2、作为返回值
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">wrap</span>() <span style="color:#66d9ef">func</span>(<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">int</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">int</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>
+    }
+}
+<span style="color:#75715e">// 3、直接被调用
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">defer</span> <span style="color:#66d9ef">func</span>() {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello func.&#34;</span>)
+}()
+<span style="color:#75715e">// 4、作为实参
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sum</span> = <span style="color:#a6e22e">doinput</span>(<span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">y</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">int</span>{
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">y</span>
+}, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)	<span style="color:#75715e">//sum值为3
+</span></code></pre></div><h2 id="defer">
   defer
   <a class="anchor" href="#defer">#</a>
 </h2>
+<p>defer用于注册多个延迟调用，先进后出；defer后面必须是函数或方法的调用；通常用于资源的释放。</p>
 <h2 id="闭包">
   闭包
   <a class="anchor" href="#%e9%97%ad%e5%8c%85">#</a>
